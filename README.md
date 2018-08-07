@@ -10,3 +10,5 @@ ctrl+shift+8/9 toggle git/github panel
 crtl+T fuzzy finder
 
 ctrl+, install package or theme
+
+test
