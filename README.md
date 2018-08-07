@@ -11,4 +11,4 @@ crtl+T fuzzy finder
 
 ctrl+, install package or theme
 
-test
+ctrl+shift+P --> github: clone --> clone repo
