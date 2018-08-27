@@ -1,5 +1,5 @@
 ##Bit manipulation:
-具体推倒见[Bit manipulation](https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/) 
+具体推倒见[Bit manipulation](https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/)
 ###Bitwise operators:
   - **NOT(~)**  
 Bitwise NOT is an unary operator that flips the bits of the number i.e., if the ith bit is 0, it will change it to 1 and vice versa.
@@ -55,7 +55,7 @@ return x && (x & (x - 1)); // 0 也不是power of 2.
 ***
 
 2. count the number of ones in the binary representation of the given number
-继承1中，N和N-1可以判断rightmost 1,循环几次说明有几个1.
+继承1中，**N & (N-1)** 可以判断rightmost 1,can clear the lowest set bit of N,循环几次说明有几个1.
 ```
 while(n) { //当 n = 0 时停止
   n = n & (n - 1);
@@ -133,3 +133,6 @@ return (N + 1) / 2;  //或者(N + 1) >> 1
 则111011即为-5的表达方式。
 3. x | (1 << n) 返回将x中第n位bit变为1.
 例：x = 10 = (1010)<sub>2</sub>, n = 2,最后的结果为(1110)<sub>2</sub>.
+4. x & ~(x - 1) extract the lowest set bit of x (all others are clear).
+5. x | (x + 1), x with the lowest cleared bit set.
+6. x | ~(x + 1), the lowest cleared bit of x (with others are set)
