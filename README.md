@@ -15,3 +15,5 @@ ctrl+shift+P --> github: clone --> clone repo
 
 atom clone a Github repo:
 ctrl + shift + P --> Github:clone --> add github url
+
+Tree easy
