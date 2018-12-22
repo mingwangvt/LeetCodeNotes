@@ -1,4 +1,5 @@
 ## template
+
 \# 904 Fruit into baskets -- medium
 ##### description:
 描述
@@ -16,6 +17,7 @@ code
 ```
 ##### 改进：
 改进
+
 *********
 
 
@@ -23,7 +25,7 @@ code
 
 
 
-## 总结各种structure的constructor
+## 总结各种structure
 
 1. hashmap
 - Map<Integer, Integer> map = new HashMap<>() / Map<Integer, Integer> map = new HashMap<>(capacity) 定义capacity和load factor (可略)
@@ -61,7 +63,7 @@ switch(c) {
                     break;
 ```
 
-6.
+6. if-elseif
 - result = ((i1.start < i2.start)? -1 : 1);
 - (i1.start < i2.start)? -1: (i1.start == i2.start)? 0 : 1;
 
