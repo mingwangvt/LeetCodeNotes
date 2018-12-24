@@ -81,6 +81,15 @@ IntervalComparator comparator = new IntervalComparator()
 //sort list, do not need to assign to list again
 collections.sort(list, comparator);
 ```
+两种comparator initiate 方法
+```
+Arrays.sort(intervals, new MeetingComparator());
+PriorityQueue<Integer> minHeap = new PriorityQueue<>(intervals.length, new Comparator<Integer>() {
+    public int compare(Integer a, Integer b) {
+        return a - b;
+    }
+});
+```
 
 8. List
 ```
@@ -96,3 +105,20 @@ List<Integer> d = new Stack<>();
 
 9. substring
 s.substring(3, 9) [3,9),not include 9
+
+10. for each -- java
+for (type var: array) {}
+
+11. sort
+Collections.sort()
+Arrays.sort()
+都可自定义comparator
+
+12. heap
+```
+PriorityQueue<Object> heap = new PriorityQueue<>();
+```
+- 如果要自定义comparator，格式：
+PriorityQueue<>(initialCapacity, comparator)
+- 没有isEmpty(),用size()判断是否为空
+- add / peek(如果empty，return null) / remove(相当于pop)
