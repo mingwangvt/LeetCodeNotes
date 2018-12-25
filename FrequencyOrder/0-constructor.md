@@ -102,6 +102,7 @@ List<Integer> d = new Stack<>();
 - add()
 - set(index, value) replace value at index
 - remove(index)
+- isEmpty()
 
 9. substring
 s.substring(3, 9) [3,9),not include 9
@@ -122,3 +123,22 @@ PriorityQueue<Object> heap = new PriorityQueue<>();
 PriorityQueue<>(initialCapacity, comparator)
 - 没有isEmpty(),用size()判断是否为空
 - add / peek(如果empty，return null) / remove(相当于pop)
+
+13. StringBuilder
+StringBuilder res = new StringBuilder();
+- append()
+- reverse()
+- .toString()
+- charAt()
+- length()
+- deleteCharAt(index)
+- delete(int start, int end) [start, end)
+
+14. Character
+- character array to string: new String(array);
+- character to int: Character.getNumericValue(char);
+
+15. int[] array1 = {};
+  int[] array2 = array1;
+  这样的assign只是获得array1在内存中的地址，并不是hard copy，如果要copy可以使用object继承下来的clone
+  int[] array2 = array1.clone();
