@@ -16,4 +16,4 @@ ctrl+shift+P --> github: clone --> clone repo
 atom clone a Github repo:
 ctrl + shift + P --> Github:clone --> add github url
 
-recursion easy 687 try
+第二轮做如果再没思路就加入hard list

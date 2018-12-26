@@ -111,9 +111,11 @@ s.substring(3, 9) [3,9),not include 9
 for (type var: array) {}
 
 11. sort
-Collections.sort()
-Arrays.sort()
-都可自定义comparator
+- Collections.sort()
+- Arrays.sort()
+- 都可自定义comparator
+- 如果要sort为descending order：Arrays.sort(arr, Collections.reverseOrder());但是这个只能用于Integer array,不能用于int array，需要进行int和Integer之间转换,需自己implement
+- 只sort array中一部分：Arrays.sort(arr, frontIndex, endIndex); [frontIndex,endIndex)
 
 12. heap
 ```
@@ -138,7 +140,10 @@ StringBuilder res = new StringBuilder();
 - character array to string: new String(array);
 - character to int: Character.getNumericValue(char);
 
-15. int[] array1 = {};
+15. Array
+- int[] array1 = {};
   int[] array2 = array1;
   这样的assign只是获得array1在内存中的地址，并不是hard copy，如果要copy可以使用object继承下来的clone
   int[] array2 = array1.clone();
+- 将array fill为相同的数val
+  Arrays.fill(arr, val);
