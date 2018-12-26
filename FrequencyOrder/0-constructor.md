@@ -36,6 +36,7 @@ code
 
 2. HashSet
 - Set<Character> set = new HashSet<>();
+- Set<String> set = new HashSet<>(Collections<String>); build set with existing Collections
 - add() / remove()
 - contains()
 - isEmpty()
@@ -46,6 +47,7 @@ code
 - add()
 - peek() get from front not remove
 - remove() remove from front
+- isEmpty
 
 4. stack
 - Stack<Character> stack = new Stack<Character>();
@@ -147,3 +149,5 @@ StringBuilder res = new StringBuilder();
   int[] array2 = array1.clone();
 - 将array fill为相同的数val
   Arrays.fill(arr, val);
+- Boolean[] 默认fill是null {null,null,null}
+boolean[] 默认fill是false {false, false, false}
