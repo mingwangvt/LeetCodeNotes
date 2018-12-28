@@ -33,6 +33,7 @@ code
 - map.containsKey(key) / map.containsValue(value);
 - map.get(key) / map.getOrDefault(key, default value);
 - map.replace(key, value);
+- map.values(); 以collections的形式返回所有map里的values ！！！
 
 2. HashSet
 - Set<Character> set = new HashSet<>();
@@ -151,3 +152,12 @@ StringBuilder res = new StringBuilder();
   Arrays.fill(arr, val);
 - Boolean[] 默认fill是null {null,null,null}
 boolean[] 默认fill是false {false, false, false}
+
+16. == vs equals
+== 判断是否为同一个object，包括相同的地址
+equals 则只要满足相等判断即可
+
+17. Pair class
+- Pair<String, Integer> p = new Pair<>("a",4);
+- getKey/getValue
+- equals
