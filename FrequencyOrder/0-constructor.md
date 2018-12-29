@@ -161,3 +161,10 @@ equals 则只要满足相等判断即可
 - Pair<String, Integer> p = new Pair<>("a",4);
 - getKey/getValue
 - equals
+
+18. Integer
+- toBinaryString(int i) return the integer as an unsigned integer in base 2
+- toHexString(int i) return integer as unsigned integer in base 16
+- toOctalString(int i) ... in base of 8
+- toString() return integer value as string
+- - character to int: Character.getNumericValue(char);
