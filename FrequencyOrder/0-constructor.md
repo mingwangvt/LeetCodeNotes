@@ -46,9 +46,10 @@ code
 3. queue
 - Queue<Integer> neigh = new LinkedList<>();
 - add()
-- peek() get from front not remove
+- peek() get from front, not remove
 - remove() remove from front
-- isEmpty
+- poll() remove from front, if empty return null
+- isEmpty()
 
 4. stack
 - Stack<Character> stack = new Stack<Character>();
@@ -126,7 +127,8 @@ PriorityQueue<Object> heap = new PriorityQueue<>();
 ```
 - 如果要自定义comparator，格式：
 PriorityQueue<>(initialCapacity, comparator)
-- 没有isEmpty(),用size()判断是否为空
+- isEmpty()
+- size()
 - add / peek(如果empty，return null) / remove(相当于pop)
 
 13. StringBuilder
