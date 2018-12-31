@@ -170,3 +170,9 @@ equals 则只要满足相等判断即可
 - toOctalString(int i) ... in base of 8
 - toString() return integer value as string
 - - character to int: Character.getNumericValue(char);
+
+19. random
+Random r = new Random();
+- nextInt() / nextInt(int bound) bound is exclusice
+- nextBoolean()
+- nextDouble()...
