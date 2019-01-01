@@ -50,6 +50,7 @@ code
 - remove() remove from front
 - poll() remove from front, if empty return null
 - isEmpty()
+- size()
 
 4. stack
 - Stack<Character> stack = new Stack<Character>();
@@ -108,8 +109,9 @@ List<Integer> d = new Stack<>();
 - remove(index)
 - isEmpty()
 
-9. substring
-s.substring(3, 9) [3,9),not include 9
+9. String
+- s.substring(3, 9) [3,9),not include 9
+- String is immutable, cannot change char at specific index. Use StringBuilder
 
 10. for each -- java
 for (type var: array) {}
@@ -133,6 +135,7 @@ PriorityQueue<>(initialCapacity, comparator)
 
 13. StringBuilder
 StringBuilder res = new StringBuilder();
+StringBuilder res = new StringBuilder("string");
 - append()
 - reverse()
 - .toString()
@@ -140,6 +143,7 @@ StringBuilder res = new StringBuilder();
 - length()
 - deleteCharAt(index)
 - delete(int start, int end) [start, end)
+- setCharAt(index, char)
 
 14. Character
 - character array to string: new String(array);
