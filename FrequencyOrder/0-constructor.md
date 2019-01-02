@@ -34,6 +34,8 @@ code
 - map.get(key) / map.getOrDefault(key, default value);
 - map.replace(key, value);
 - map.values(); 以collections的形式返回所有map里的values ！！！
+- keySet()
+- size()
 
 2. HashSet
 - Set<Character> set = new HashSet<>();
@@ -108,10 +110,15 @@ List<Integer> d = new Stack<>();
 - set(index, value) replace value at index
 - remove(index)
 - isEmpty()
+- size()
 
 9. String
 - s.substring(3, 9) [3,9),not include 9
 - String is immutable, cannot change char at specific index. Use StringBuilder
+- str.split();
+  - str.split("")有一下特殊符号需要注意
+  there are 12 characters with special meanings: the backslash `\`, the caret `^`, the dollar sign `$`, the period or dot `.`, the vertical bar or pipe symbol `|`, the question mark `?`, the asterisk or star  `*`, the plus sign `+`, the opening parenthesis `(`, the closing parenthesis `)`, and the opening square bracket `[`, the opening curly brace `{`, These special characters are often called "metacharacters".
+  if you want to split on e.g. period/dot `.` which means "any character" in regex, use either backslash `\` to escape the individual special character like so `split("\\.")`
 
 10. for each -- java
 for (type var: array) {}
@@ -131,7 +138,7 @@ PriorityQueue<Object> heap = new PriorityQueue<>();
 PriorityQueue<>(initialCapacity, comparator)
 - isEmpty()
 - size()
-- add / peek(如果empty，return null) / remove(相当于pop)
+- add / peek(如果empty，return null) / remove或者用poll()
 
 13. StringBuilder
 StringBuilder res = new StringBuilder();
@@ -144,6 +151,7 @@ StringBuilder res = new StringBuilder("string");
 - deleteCharAt(index)
 - delete(int start, int end) [start, end)
 - setCharAt(index, char)
+- length();
 
 14. Character
 - character array to string: new String(array);
