@@ -181,7 +181,9 @@ equals 则只要满足相等判断即可
 - toHexString(int i) return integer as unsigned integer in base 16
 - toOctalString(int i) ... in base of 8
 - toString() return integer value as string
-- - character to int: Character.getNumericValue(char);
+- character to int: Character.getNumericValue(char);
+- string to int:
+Integer.parseInt(str) -- Primitive int / Integer.valueOf(str) -- Integer object
 
 19. random
 Random r = new Random();
