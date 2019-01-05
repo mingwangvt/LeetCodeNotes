@@ -172,6 +172,7 @@ boolean[] 默认fill是false {false, false, false}
 equals 则只要满足相等判断即可
 
 17. Pair class
+- 用Pair class一定要`import javafx.util.*;`
 - Pair<String, Integer> p = new Pair<>("a",4);
 - getKey/getValue
 - equals
