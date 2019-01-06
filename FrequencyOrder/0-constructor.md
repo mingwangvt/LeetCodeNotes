@@ -36,6 +36,7 @@ code
 - map.values(); 以collections的形式返回所有map里的values ！！！
 - keySet()
 - size()
+- remove()
 
 2. HashSet
 - Set<Character> set = new HashSet<>();
@@ -111,6 +112,10 @@ List<Integer> d = new Stack<>();
 - remove(index)
 - isEmpty()
 - size()
+- array to list & list to array
+  - Arrays.asList(int[]) return list
+  - String[] y = x.toArray(new String[size]);
+  - int[] intArr = list.stream().mapToInt(Integer::intValue).toArray();
 
 9. String
 - s.substring(3, 9) [3,9),not include 9
