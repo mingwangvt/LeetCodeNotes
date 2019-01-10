@@ -36,7 +36,7 @@ code
 - map.values(); 以collections的形式返回所有map里的values ！！！
 - keySet()
 - size()
-- remove()
+- remove(key) / remove(key, value)
 
 2. HashSet
 - Set<Character> set = new HashSet<>();
