@@ -158,9 +158,22 @@ StringBuilder res = new StringBuilder("string");
 - setCharAt(index, char)
 - length();
 
-14. Character
-- character array to string: new String(array);
-- character to int: Character.getNumericValue(char);
+14. Character, String, Integer互相转换
+- charact to ...
+  - character array to string:
+  new String(array);
+  - to int:
+   Character.getNumericValue(char);
+  - to String:
+  String.valueOf(char);
+- Integer to ...
+  - to String:
+    - toString() return integer value as string
+    - String.valueOf(int);
+- string to ...
+  - to int:
+Integer.parseInt(str) -- Primitive int
+Integer.valueOf(str) -- Integer object
 
 15. Array
 - int[] array1 = {};
@@ -186,10 +199,6 @@ equals 则只要满足相等判断即可
 - toBinaryString(int i) return the integer as an unsigned integer in base 2
 - toHexString(int i) return integer as unsigned integer in base 16
 - toOctalString(int i) ... in base of 8
-- toString() return integer value as string
-- character to int: Character.getNumericValue(char);
-- string to int:
-Integer.parseInt(str) -- Primitive int / Integer.valueOf(str) -- Integer object
 
 19. random
 Random r = new Random();
