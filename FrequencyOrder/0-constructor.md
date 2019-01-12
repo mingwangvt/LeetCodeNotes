@@ -37,6 +37,7 @@ code
 - keySet()
 - size()
 - remove(key) / remove(key, value)
+- map1.equals(map2) 判断两个hashmap相等
 
 2. HashSet
 - Set<Character> set = new HashSet<>();
