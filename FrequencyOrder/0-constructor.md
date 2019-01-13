@@ -206,3 +206,11 @@ Random r = new Random();
 - nextInt() / nextInt(int bound) bound is exclusice
 - nextBoolean()
 - nextDouble()...
+
+20. Character判断
+- Character.isDigit(char)
+- Character.isLetter(char)
+- Character.isLowerCase(char)
+- Character.isUpperCase(char)
+- Character.toLowerCase(char)
+- Character.toUpperCase(char)
