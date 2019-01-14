@@ -125,6 +125,7 @@ List<Integer> d = new Stack<>();
   - str.split("")有一下特殊符号需要注意
   there are 12 characters with special meanings: the backslash `\`, the caret `^`, the dollar sign `$`, the period or dot `.`, the vertical bar or pipe symbol `|`, the question mark `?`, the asterisk or star  `*`, the plus sign `+`, the opening parenthesis `(`, the closing parenthesis `)`, and the opening square bracket `[`, the opening curly brace `{`, These special characters are often called "metacharacters".
   if you want to split on e.g. period/dot `.` which means "any character" in regex, use either backslash `\` to escape the individual special character like so `split("\\.")`
+- indexOf(str/char) 寻找str/char在string中的位置, -1如果不包含这个str or char
 
 10. for each -- java
 for (type var: array) {}
@@ -158,6 +159,7 @@ StringBuilder res = new StringBuilder("string");
 - delete(int start, int end) [start, end)
 - setCharAt(index, char)
 - length();
+- StringBuilder + StringBuilder 用append：`builder1.append(builder2)`
 
 14. Character, String, Integer互相转换
 - charact to ...
@@ -179,12 +181,13 @@ Integer.valueOf(str) -- Integer object
 15. Array
 - int[] array1 = {};
   int[] array2 = array1;
-  这样的assign只是获得array1在内存中的地址，并不是hard copy，如果要copy可以使用object继承下来的clone
+  这样的assign只是获得array1在内存中的地址，并不是hard copy，如果要hard copy可以使用object继承下来的clone
   int[] array2 = array1.clone();
 - 将array fill为相同的数val
   Arrays.fill(arr, val);
 - Boolean[] 默认fill是null {null,null,null}
 boolean[] 默认fill是false {false, false, false}
+- copy array一部分内容可以使用：`Arrays.copyOfRange(arr, start, end)` [start, end)
 
 16. == vs equals
 == 判断是否为同一个object，包括相同的地址
