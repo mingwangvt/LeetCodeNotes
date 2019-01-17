@@ -108,9 +108,11 @@ List<Integer> c = new Vector<>();
 List<Integer> d = new Stack<>();
 ```
 - get(index)
-- add()
+- add(object)
+- add(index, object) 相当于insert
 - set(index, value) replace value at index
 - remove(index)
+- remove(object)
 - isEmpty()
 - size()
 - array to list & list to array
