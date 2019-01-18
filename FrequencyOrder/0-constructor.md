@@ -177,7 +177,7 @@ StringBuilder res = new StringBuilder("string");
     - String.valueOf(int);
 - string to ...
   - to int:
-Integer.parseInt(str) -- Primitive int
+Integer.parseInt(str) -- Primitive int (可以直接parse 负数)
 Integer.valueOf(str) -- Integer object
 
 15. Array
