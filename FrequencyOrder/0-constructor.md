@@ -219,3 +219,20 @@ Random r = new Random();
 - Character.isUpperCase(char)
 - Character.toLowerCase(char)
 - Character.toUpperCase(char)
+
+21. constant variable
+- static final int DAYS_IN_WEEK = 7;
+
+22. [regular expression](http://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
+[regular expression 2](http://tutorials.jenkov.com/java-regex/pattern.html)
+
+23. array default:
+- For type byte, the default value is zero, that is, the value of (byte)0.
+- For type short, the default value is zero, that is, the value of (short)0.
+- For type int, the default value is zero, that is, 0.
+- For type long, the default value is zero, that is, 0L.
+- For type float, the default value is positive zero, that is, 0.0f.
+- For type double, the default value is positive zero, that is, 0.0d.
+- For type char, the default value is the null character, that is, '\u0000'.
+- For type boolean, the default value is false.
+- For all reference types (§4.3), the default value is null. (like string, object)
