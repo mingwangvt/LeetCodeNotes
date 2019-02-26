@@ -94,6 +94,7 @@ collections.sort(list, comparator);
 ```
 Arrays.sort(intervals, new MeetingComparator());
 PriorityQueue<Integer> minHeap = new PriorityQueue<>(intervals.length, new Comparator<Integer>() {
+    @Override
     public int compare(Integer a, Integer b) {
         return a - b;
     }
@@ -143,6 +144,7 @@ for (type var: array) {}
 ```
 PriorityQueue<Object> heap = new PriorityQueue<>();
 ```
+- 本身是minheap
 - 如果要自定义comparator，格式：
 PriorityQueue<>(initialCapacity, comparator)
 - isEmpty()
